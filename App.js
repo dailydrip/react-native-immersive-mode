@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { Platform, StyleSheet, Text, View, StatusBar } from "react-native";
 
 import ViewUtil from "./ViewUtilModule";
 
@@ -19,6 +19,7 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar hidden={true} />
         <Text style={styles.welcome}>
           Testing Native Modules in Android :)
         </Text>
