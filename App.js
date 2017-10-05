@@ -12,7 +12,8 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
   componentDidMount() {
     if (Platform.OS != "ios") {
-      ViewUtil.removeScreenAwake();
+      ViewUtil.keepScreenAwake();
+      ViewUtil.enterFullScreen();
     }
   }
   render() {
